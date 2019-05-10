@@ -6,8 +6,6 @@ import typeDefs from './typeDefs'
 import resolvers from './resolvers'
 import { APP_PORT, IN_PROD, DB_USERNAME, DB_PASSWORD, DB_HOST } from './config'
 
-console.log(process.env)
-
 mongoose
   .connect(`mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}`, {
     useNewUrlParser: true,
